@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto:wght@300;700;900&display=swap');
+
+:root {
+    --bgColor: #f0f7ff;
+    --fontColor1:#383838;
+    --fontColor2: #ffffff;
+    --transition: all 0.3s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--fontColor1);
+}
+
+body {
+    background-color: var(--bgColor);
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    margin: 0 auto;
+
+}
+
+.title-counter {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.number-container {
+    font-size: 7rem;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 2px solid var(--fontColor1);
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: var(--bgColor);
+    margin: 0 0.5rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background-color: var(--fontColor1);
+    color: var(--fontColor2);
+}
+
+@media screen and (max-width: 425px) {
+    .btn {
+        display: block;
+        margin: 0.5rem auto;
+        width: 100%;
+    }
+}
