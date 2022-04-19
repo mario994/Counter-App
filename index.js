@@ -1,4 +1,3 @@
-import css from './css/main.css';
 const numberCounter = document.querySelector('.number');
 const btnIncrease = document.querySelector('.btn-increase');
 const btnDecrease = document.querySelector('.btn-decrease');
